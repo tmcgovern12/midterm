@@ -1,0 +1,341 @@
+@ -1,340 +0,0 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The St. Patrick&#39;s Day Store</title>
+
+
+	<!-- SlickNav Links -->
+<link rel="stylesheet" href="styles/slicknav.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    });
+</script>
+
+	<style>
+/******************************* START YOUR CSS HERE ********************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url('images/tile_shamrock.jpg');
+    background-attachment: fixed;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto; 
+    border: 3px solid black;
+    box-shadow: 3px 3px 12px 3px gray;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+
+header img {
+	max-width: 150px;
+	width: 100%;
+	padding: 5px;
+}
+
+header h2 {
+	font-size: 220%;
+}
+
+header h3 {
+	font-size: 125%;
+}
+
+header {
+	background-image: linear-gradient(45deg, green 0%, white 50%, green 100%);;
+}
+
+#nav_menu {
+	border-top: 3px, solid green;
+	border-bottom: 3px, solid green;
+	background-color: green;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	display: flex;
+}
+
+#nav_menu li {
+	width: 20%;
+}
+
+#nav_menu a {
+text-align: center;
+display: block;
+padding: .7em 0;
+background-color: green;
+font-weight: bold;
+text-decoration: none;
+color: white;
+}
+
+#nav_menu a:hover {
+	color: black;
+	background-color: lightgreen;
+}
+
+main {
+	margin-top: 2em;
+	display: flex;
+	gap: 2em;
+}
+
+#aside_right img {
+	max-width: 150px;
+	width: 100%;
+	padding: 0 .5em;
+}
+
+section {
+	width: 60%;
+}
+
+aside {
+	width: 20%;
+}
+
+a:link, a:visited {
+	color: green;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+	color: lime;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+section h1 {
+	font-size: 150%;
+	color: green;
+	text-shadow: 2px 2px 8px gray;
+}
+
+section h2 {
+	font-size: 125%;
+}
+
+section h3 {
+	font-size: 110%;
+}
+
+section p {
+	line-height: 1.5;
+}
+
+#aside_left {
+ margin: 2em;
+}
+#nav_list ul {
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ gap: .5em;
+}
+#nav_list li {
+ border: 1px solid black;
+}
+#nav_list a {
+ display: block;
+ padding: .5em;
+ background-color: lightgreen;
+ text-decoration: none;
+ font-weight: bold;
+ color: black;
+}
+#nav_list a:hover {
+ background-color: #006400;
+ color: white;
+}
+
+#aside_right {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	align-items: center;
+}
+
+#aside_right p {
+	font-size: 85%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top: 2px solid green;
+	margin-top: 2em;
+	border-top: 2px solid green;
+    padding: 15px 0;
+	background-image: linear-gradient(45deg, green 0%, white 50%, green 100%);
+}
+
+footer p {
+	font-size: 90%;
+	font: bold;
+}
+
+footer img {
+	max-width: 50px;
+	width: 100%;
+}
+
+#mobilemenu {
+	display: none;
+}
+
+@media (max-width: 767px) {
+#nav_menu {
+	display: none;
+	text-align: center;
+}
+#mobilemenu {
+	display: block;
+}
+.slicknav_menu{
+	background-color: green;
+}
+.slicknav_nav a:link, .slicknav_nav a:visited {
+         color: white;
+ }
+main, header {
+	flex-direction: column;
+	align-items: center;
+}
+
+section, aside {
+	width: 95%;
+}
+
+header, section h1 {
+	text-align: center;
+}
+#aside_left {
+	order: 2;
+}
+
+}
+
+
+/************************************** END CSS *************************************/
+	</style>
+
+</head>
+<body>
+
+  <!-- -- -- -- -- -- -- START HEADER -- -- -- -- -- -->
+  <header>
+  	<img src="images/Leprechaun.gif" alt="Leprechaun">
+   <div>
+	<h2>The St. Patrick&#39;s Day Store</h2>
+   	<h3>For the little Leprechaun in all of us!</h3>
+   </div>
+  </header>
+  <!-- -- -- -- -- -- -- END HEADER -- -- -- -- -- -->
+
+  <!-- -- -- -- -- -- -- START nav_menu -- -- -- -- -- -->
+  <nav id="mobilemenu"></nav>
+  <nav id="nav_menu">
+  	<ul>
+    	<li><a href="." class="current">Home</a></li>
+    	<li><a href=".">Product List</a></li>
+    	<li><a href=".">Personal</a></li>
+    	<li><a href=".">Decorating Ideas</a></li>
+    	<li><a href="mailto:eddie@stpatricksdaystore.com">Join Email</a></li>
+
+	</ul>
+  </nav>
+  <!-- -- -- -- -- -- -- END #NAV_MENU -- -- -- -- -- -->
+
+  <!-- -- -- -- -- -- -- START MAIN -- -- -- -- -- -->
+  <main>
+	<aside id="aside_left">
+		<nav id="nav_list">
+			<ul>
+				<li><a href="#">Props</a></li>
+				<li><a href="#">Costumes</a></li>
+				<li><a href="#">Special FX</a></li>
+				<li><a href="#">Masks</a></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<section>
+    	<h1>Welcome to The St. Patrick&#39;s Day Store</h1>
+		<h2>Please come in and stay awhile.</h2>
+    	<p>I started this web site because St. Patrick&#39;s Day has always been my favorite holiday.
+    		But during the last year, I started selling some of my favorite St. Patrick&#39;s Day products,
+    		and they&#39;ve become quite a hit.</p>
+    	<p>If you click on the Personal link, you can browse my favorite St. Patrick&#39;s Day pictures,
+    		stories, and films. And if you join my email list, I will keep you up-to-date on
+    		all things St. Patrick&#39;s Day.</p>
+
+		<h3>My guarantee</h3>
+    	<p>If you aren&#39;t completely satisfied with everything you buy from my site, you can return it
+    		for a full refund. <strong>No questions asked!</strong></p>
+	</section>
+
+	<aside id="aside_right">
+		<h2>Products</h2>
+		<p><a href="#"><img src="images/leprechaun_bottle_openers.jpg" alt="Leprechaun Bottle Openers"></a>
+		<a href="#">Leprechaun Bottle Openers</a></p>
+
+		<p><a href="#"><img src="images/feltbowlerhat.jpg" alt="Felt Bowler Hat"></a>
+		<a href="#">Felt Bowler Hat</a></p>
+
+		<p><a href="#"><img src="images/shamrock_walldecoration.jpg" alt="Clover Wall Decoration"></a>
+		<a href="#">Shamrock Wall Decoration</a></p>
+	</aside>
+  </main> <!-- End main -->
+
+  <footer>
+	<p>&copy; <span id="copyright"></span> [Your Name Here] Productions</p>
+	<p><img src="images/leprechaun_animated.gif"></p>
+	<p>L&aacute; Shona Fh&eacute;ile P&aacute;draig!</p>
+  </footer>
+  
+</body>
+</html>
+
+<!-- Javascript to Autofill the Current Year in the Footer -->
+<script>
+	window.onload = function() {
+		var d = new Date();
+		document.getElementById("copyright").innerHTML = d.getFullYear();
+	}
+	</script>
